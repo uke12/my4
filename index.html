@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+    /* body태그 자체에 css 요소 부여 */
+    body {
+        font-family: "LeeSeoyun";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("./background.png");
+    }
+
+    .container {
+        width: 390px;
+        background-color: #b8c9bf;
+        height: 100%;
+    }
+
+    .photos {
+        margin-top: 30px;
+    }
+    
+    .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: cover;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-title {
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .f-date {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #image1 {
+        background-image: url('./026.jpg');
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #image1:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #image1:hover:before {
+        opacity: 1;
+    }
+
+        #desc1 {
+    color: rgb(160, 104, 104);
+    font-size: 20px;
+    font-weight: 500;
+    animation: moveText 20s infinite linear;
+    }
+
+    @keyframes moveText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    }
+
+
+    #image1:hover #desc1 {
+        opacity: 1;
+        animation: flash 1s ease-in-out;
+    }
+
+    @keyframes flash {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0); }
+        100% { transform: translateX(100%); }
+    }
+
+    #image2 {
+        background-image: url('./마무리\ 멘트\ 사진.jpg');
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #image2:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #image2:hover:before {
+        opacity: 1;
+    }
+
+        #desc2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    animation: moveText 20s infinite linear;
+    }
+
+    @keyframes moveText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    }
+
+
+    #image2:hover #desc2 {
+        opacity: 1;
+        animation: flash 1s ease-in-out;
+    }
+
+    @keyframes flash {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0); }
+        100% { transform: translateX(100%); }
+    }
+        
+
+
+    #image3 {
+        background-image: url('./034.jpg');
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #image3:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #image3:hover:before {
+        opacity: 1;
+    }
+
+        #desc3 {
+    color: rgb(68, 92, 136);
+    font-size: 20px;
+    font-weight: 500;
+    animation: moveText 20s infinite linear;
+    }
+
+    @keyframes moveText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    }
+
+
+    #image3:hover #desc3 {
+        opacity: 1;
+        animation: flash 1s ease-in-out;
+    }
+
+    @keyframes flash {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0); }
+        100% { transform: translateX(100%); }
+    }
+    #image4 {
+        background-image: url('./77_001.jpg');
+
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #image4:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #image4:hover:before {
+        opacity: 1;
+    }
+
+        #desc4 {
+    color: rgb(196, 167, 176);
+    font-size: 20px;
+    font-weight: 500;
+    animation: moveText 20s infinite linear;
+    }
+
+    @keyframes moveText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    }
+
+
+    #image4:hover #desc4 {
+        opacity: 1;
+        animation: flash 1s ease-in-out;
+    }
+
+    @keyframes flash {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0); }
+        100% { transform: translateX(100%); }
+    }
+    .photo-frame  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(29, 52, 71);
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    조금더 안전한곳은 어떻씁니까 이를테면 이곳 
+                </span>
+            </div>
+
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description">
+                    그래 ?이제부터 시작하면되  내가 있어야 할자리는 네 옆이니까
+                </span>
+            </div>
+            
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description">
+                    제길을 가려면 당신도 저를 따라오시죠
+                </span>
+            </div>
+            
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo_description">
+                    흩날리는 꽃잎처럼 자유롭게 살아가는 건 어때?
+                </span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p class="f-title">barn.</p>
+            <p class="f-date">2023.04.14</p>
+        </div>
+    </div>
+</body>
+</html>
